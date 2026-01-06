@@ -1,14 +1,14 @@
-// Scroll animation
-const scrollElements = document.querySelectorAll(".scroll");
-const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
-  return (elementTop <= (window.innerHeight || document.documentElement.clientHeight)/dividend);
-};
-const displayScrollElement = (element) => { element.classList.add("scrolled"); };
-const handleScrollAnimation = () => { scrollElements.forEach(el => { if(elementInView(el,1.25)) displayScrollElement(el); }); };
-window.addEventListener("scroll", handleScrollAnimation);
+// Loader + Scroll animation
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const scrollElements = document.querySelectorAll('.scroll');
 
-// Hamburger menu toggle
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-hamburger.addEventListener("click", () => { navLinks.classList.toggle("active"); });
+  // hilangkan loader
+  setTimeout(() => {
+    loader.style.opacity = '0';
+    loader.style.pointerEvents = 'none';
+
+    // jalankan animasi scroll untuk semua section
+    scrollElements.forEach(el => el.classList.add('scrolled'));
+  }, 2000);
+});
