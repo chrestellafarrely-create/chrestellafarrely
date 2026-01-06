@@ -10,7 +10,15 @@
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- LOADER / INTRO ANIMATION -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="assets/profile.jpg" alt="Logo/Foto" class="loader-img">
+      <h1>Chrestella Farrely</h1>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Chrestella Farrely Portofolio</div>
     <ul class="nav-links">
@@ -19,50 +27,37 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="hamburger">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="home-section">
+  <!-- HOME SECTION -->
+  <section id="home" class="home-section scroll">
     <div class="home-content">
-      <div class="home-left">
+      <div class="home-left scroll">
         <img src="assets/profile.jpg" alt="Foto Profil" class="profile-pic">
         <h1>Halo, Saya <span class="highlight">Chrestella Farrely</span></h1>
         <p>Web Developer | Membuat website modern & responsif</p>
-        
         <div class="home-buttons">
-          <a href="#projects" class="btn">Lihat projects</a>
+          <a href="#projects" class="btn">Lihat Projects</a>
           <a href="#contact" class="btn">Contact</a>
         </div>
-
-        <!-- Sosial Media di Home -->
         <div class="home-social">
-          <a href="https://www.instagram.com/parrelllll_?igsh=MWNrcGE1bzB0d3dtNQ%3D%3D&utm_source=qr" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://wa.me/6287879866229" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="mailto:chrestellafarrely14@gmail.com" target="_blank">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/chrestella-farrely-054702311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
+          <a href="https://www.instagram.com/parrelllll_?igsh=MWNrcGE1bzB0d3dtNQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/6287879866229" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:chrestellafarrely14@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/chrestella-farrely-054702311" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-      <div class="home-right">
+      <div class="home-right scroll">
         <img src="assets/decor.gif" alt="GIF Pajangan" class="home-gif">
       </div>
     </div>
   </section>
 
-  <!-- About Me Section -->
+  <!-- ABOUT ME SECTION -->
   <section id="about" class="about-section scroll">
     <h2>About Me</h2>
-    <div class="about-content">
+    <div class="about-content scroll">
       <div class="about-img">
         <img src="assets/profile.jpg" alt="Foto Profil">
       </div>
@@ -72,10 +67,10 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="projects-section scroll">
-    <h2>Proyek Terbaru</h2>
-    <div class="projects-grid">
+    <h2>Projects Terbaru</h2>
+    <div class="projects-grid scroll">
       <div class="project-card">
         <h3>Website Cafe</h3>
         <p>Desain website cafe dengan animasi menarik & responsive.</p>
@@ -91,32 +86,24 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="contact-section scroll">
     <h2>Kontak Saya</h2>
-    
-    <!-- Form Kontak -->
     <form class="contact-form" action="mailto:chrestellafarrely14@gmail.com" method="POST" enctype="text/plain">
       <input type="text" name="nama" placeholder="Nama Anda" required>
       <input type="email" name="email" placeholder="Email Anda" required>
       <textarea name="pesan" rows="5" placeholder="Pesan Anda" required></textarea>
       <button type="submit" class="btn">Kirim Pesan</button>
     </form>
-
     <p>Atau hubungi langsung via WhatsApp:</p>
     <a href="https://wa.me/6287879866229" target="_blank" class="btn">Chat WA</a>
-
     <div class="social-links">
-      <a href="https://www.instagram.com/parrelllll_?igsh=MWNrcGE1bzB0d3dtNQ%3D%3D&utm_source=qr" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-      <a href="https://www.linkedin.com/in/chrestella-farrely-054702311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+      <a href="https://www.instagram.com/parrelllll_?igsh=MWNrcGE1bzB0d3dtNQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.linkedin.com/in/chrestella-farrely-054702311" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 Chrestella Farrely. All Rights Reserved.</p>
   </footer>
