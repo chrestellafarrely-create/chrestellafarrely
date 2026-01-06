@@ -1,66 +1,126 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Developer Karanganyar</title>
-  <meta name="description" content="Jasa Web Developer Karanganyar – pembuatan website bisnis, UMKM, salon, coffee shop, dan personal dengan desain modern & SEO friendly." />
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; line-height:1.6; color:#222; }
-    header { background:#111; color:#fff; padding:60px 20px; text-align:center; }
-    header h1 { margin-bottom:10px; font-size:2.2rem; }
-    header p { max-width:720px; margin:0 auto 20px; }
-    .btn { background:#ff9800; color:#000; padding:12px 20px; text-decoration:none; border-radius:6px; font-weight:bold; }
-    section { padding:50px 20px; max-width:1000px; margin:auto; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
-    .card { border:1px solid #eee; padding:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.05); }
-    footer { background:#f4f4f4; text-align:center; padding:20px; font-size:.9rem; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Chrestella Farrely</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
-  <header>
-    <h1>Web Developer Karanganyar</h1>
-    <p>Saya membantu UMKM & bisnis di Karanganyar memiliki website profesional, cepat, dan mudah ditemukan di Google sekaligus membangun personal branding sebagai Web Developer Karanganyar.</p>
-    <a href="#kontak" class="btn">Hubungi Saya</a>
-  </header>
 
-  <section>
-    <h2>Jasa Web Developer Karanganyar</h2>
-    <p>Kami menyediakan jasa pembuatan website profesional untuk UMKM dan bisnis lokal di Karanganyar. Website dirancang untuk meningkatkan kepercayaan pelanggan dan memudahkan bisnis ditemukan di Google.</p>
-    <p>Fokus layanan kami meliputi website bisnis, landing page promosi, dan website sederhana yang cepat, mobile friendly, serta sesuai kebutuhan usaha.</p>
-  </section>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Chrestella Farrely Portofolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
 
-  <section>
-    <h2>Layanan</h2>
-    <div class="grid">
-      <div class="card"><h3>Website Bisnis</h3><p>Company profile, UMKM, salon, coffee shop, dan toko lokal.</p></div>
-      <div class="card"><h3>Landing Page</h3><p>Website 1 halaman untuk promosi cepat & iklan.</p></div>
-      <div class="card"><h3>Website Portfolio</h3><p>Personal branding untuk freelancer & mahasiswa.</p></div>
-      <div class="card"><h3>SEO Dasar</h3><p>Struktur ramah Google agar mudah muncul di pencarian.</p></div>
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <div class="home-left">
+        <img src="assets/profile.jpg" alt="Foto Profil" class="profile-pic">
+        <h1>Halo, Saya <span class="highlight">Chrestella Farrely</span></h1>
+        <p>Web Developer | Membuat website modern & responsif</p>
+        
+        <div class="home-buttons">
+          <a href="#projects" class="btn">Lihat projects</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+
+        <!-- Sosial Media di Home -->
+        <div class="home-social">
+          <a href="https://www.instagram.com/parrelllll_?igsh=MWNrcGE1bzB0d3dtNQ%3D%3D&utm_source=qr" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/6287879866229" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:chrestellafarrely14@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/chrestella-farrely-054702311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="home-right">
+        <img src="assets/decor.gif" alt="GIF Pajangan" class="home-gif">
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Kenapa Pilih Saya?</h2>
-    <ul>
-      <li>Fokus area Karanganyar & Solo Raya</li>
-      <li>Desain modern & mobile friendly</li>
-      <li>Komunikasi mudah & responsif</li>
-      <li>Bisa pakai GitHub Pages / hosting murah</li>
-      <li>Harga ramah UMKM</li>
-    </ul>
-    <a href="https://wa.me/6287879866229" class="btn">Konsultasi Gratis via WhatsApp</a>
+  <!-- About Me Section -->
+  <section id="about" class="about-section scroll">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-img">
+        <img src="assets/profile.jpg" alt="Foto Profil">
+      </div>
+      <div class="about-text">
+        <p>Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan kuat pada web development. Saya senang mempelajari teknologi web terbaru, mulai dari HTML, CSS, JavaScript, hingga framework modern, dan berusaha mengaplikasikannya untuk membuat website yang menarik, fungsional, dan responsif. Saya juga terbuka untuk proyek pengembangan website, portofolio digital, atau kolaborasi dengan tim untuk meningkatkan pengalaman pengguna dan menghadirkan solusi digital yang kreatif.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="kontak">
-    <h2>Kontak</h2>
-    <p>Ingin website profesional atau ingin bekerja sama?</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/6287879866229">0878-7986-6229</a></p>
-    <p><strong>Email:</strong> <a href="mailto:chrestellafarrely@gmail.com">chrestellafarrely@gmail.com</a></p>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section scroll">
+    <h2>Proyek Terbaru</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Website Cafe</h3>
+        <p>Desain website cafe dengan animasi menarik & responsive.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Pribadi</h3>
+        <p>Portofolio modern dengan tampilan elegan & animasi smooth.</p>
+      </div>
+      <div class="project-card">
+        <h3>Landing Page App</h3>
+        <p>Landing page aplikasi mobile minimalis & eye-catching.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section scroll">
+    <h2>Kontak Saya</h2>
+    
+    <!-- Form Kontak -->
+    <form class="contact-form" action="mailto:chrestellafarrely14@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nama" placeholder="Nama Anda" required>
+      <input type="email" name="email" placeholder="Email Anda" required>
+      <textarea name="pesan" rows="5" placeholder="Pesan Anda" required></textarea>
+      <button type="submit" class="btn">Kirim Pesan</button>
+    </form>
+
+    <p>Atau hubungi langsung via WhatsApp:</p>
+    <a href="https://wa.me/6287879866229" target="_blank" class="btn">Chat WA</a>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/parrelllll_?igsh=MWNrcGE1bzB0d3dtNQ%3D%3D&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.linkedin.com/in/chrestella-farrely-054702311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2026 Web Developer Karanganyar</p>
+    <p>© 2026 Chrestella Farrely. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
